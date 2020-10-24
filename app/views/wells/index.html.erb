@@ -1,0 +1,46 @@
+<div class="container">
+  <h1>Wells Directory</h1>
+  <% @wells.each_with_index do |well, i| %>
+    <div class="list-row">
+      <div class="item">
+        <%= i+1 %>
+      </div>
+      <div class="item">
+        <%= well.name %>
+      </div>
+      <div class="item">
+        <%= well.customer %>
+      </div>
+      <div class="item">
+        <%= well.northing %>
+      </div>
+      <div class="item">
+        <%= well.easting %>
+      </div>
+      <div class="item">
+        <%= well.coordinate_system %>
+      </div>
+      <div class="item">
+        <%= well.country %>
+      </div>
+      <div class="item">
+        <%= well.state %>
+      </div>
+      <div class="item">
+        <%= well.county %>
+      </div>
+      <div class="item">
+        <%= well.city %>
+      </div>
+      <div class="item">
+        <%= well.area %>
+      </div>
+      <div class="item">
+        <%= well.field %>
+      </div>
+      <div class="item">
+        <%= well.structure %>
+      </div>
+    </div>
+  <% end %>
+</div>
